@@ -4,7 +4,7 @@ public class FactorialCalculation {
     public static void main(String[] args) {
         int fact=1;
         int i;
-        int num=4;
+        int num=2;
         for(i=1;i<=num;i++){
             fact=fact*i;
         }

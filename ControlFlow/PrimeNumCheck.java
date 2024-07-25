@@ -1,20 +1,22 @@
 package ControlFlow;
 
+
+//prime numbers bw 1-484
 public class PrimeNumCheck {
     public static void main(String[] args) {
-        int num=484;
+        int num = 484;
         int i;
-        int countFact=0;
-        for(i=2;i<num;i++){
-            if(num%i==0){
-                countFact++;
+
+        for (i = 2; i < num; i++) {
+            int countFact=0;
+            for (int j = 2; j <=i; j++) {
+                if (i % j == 0) {
+                    countFact++;
+                }
             }
-        }
-        if(countFact==0){
-            System.out.println("The entered number is a prime number.");
-        }
-        else{
-            System.out.println("The entered number is a Composite number.");
+            if (countFact<2) {
+                System.out.println(i);
+            }
         }
     }
 }
