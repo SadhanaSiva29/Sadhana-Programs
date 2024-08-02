@@ -6,6 +6,6 @@ public class LibraryManagementSystem {
         library.addBook(new Book("Harry Potter","J.K. Rowling"));
         System.out.println("Available books: \n");
         library.viewBooks();
-        library.borrowBook("Harry Potter");
+        library.borrowBook("Harry ");
     }
 }
