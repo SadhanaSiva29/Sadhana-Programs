@@ -16,27 +16,28 @@ public class Library {
             System.out.println("Library is full.");
         }
     }
+    //use the tittle variable
     public void borrowBook(String title){
         for(int i=0;i<bookCount;i++){
-            if(!books[i].isBorrowed()){
+            if((books[i].getTitle().equals(title)) && !books[i].isBorrowed()){
                 books[i].borrow();
-            }
-            else{
-                System.out.println("No such book is available in the Library.");
+                System.out.println("Book is successfully borrowed: "+books[i]);
             }
         }
     }
     public void returnBook(String title){
         for(int i=0;i<bookCount;i++) {
-            if (!books[i].isBorrowed()) {
-                books[i].borrow();
-                System.out.println("Book is successfully borrowed: "+books[i]);
+            if ((books[i].getTitle().equals(title)) && books[i].isBorrowed()) {
+                books[i].returnBook();
+                System.out.println("Book is successfully returned: "+books[i]);
             }
         }
     }
     public void viewBooks(){
         for(int i=0;i<bookCount;i++){
             System.out.println(books[i]);
+
         }
     }
+
 }

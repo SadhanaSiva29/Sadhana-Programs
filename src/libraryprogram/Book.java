@@ -23,7 +23,8 @@ public class Book {
     public void returnBook(){
         isBorrowed=false;
     }
+
     public String toString(){
-        return "Book{"+"title: '"+title+"\n"+"author: "+"\nisBorrowed: "+isBorrowed+'}';
+        return "Book: \n"+"title: "+title+"\n"+"author: "+author+"\nisBorrowed: "+isBorrowed;
     }
 }
