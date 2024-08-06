@@ -12,12 +12,15 @@ public class BankAccount {
         balance= balance+amount;
         return balance;
     }
+
     public double withdrawMoney(double amount){
-        if(balance>amount) {
+        if(balance>=amount) {
             balance = balance - amount;
-            return balance;
         }
-        else
-            return 0;
+        else {
+            System.out.println("No sufficient balance available.");
+
+        }
+        return balance;
     }
 }

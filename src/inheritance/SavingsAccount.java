@@ -8,8 +8,8 @@ public class SavingsAccount extends BankAccount{
         System.out.println("Interest: "+interest);
     }
     public static void main(String[] args) {
-        SavingsAccount savingsAccount=new SavingsAccount("AB123",500.00,2,500,10);
-        System.out.println("Deposit: "+savingsAccount.depositMoney(5000.00));
-        System.out.println("Withdraw: "+savingsAccount.withdrawMoney(4000.00));
+        SavingsAccount savingsAccount=new SavingsAccount("AB123",5000,2,500,10);
+        System.out.println("Balance after depositing: "+savingsAccount.depositMoney(6000.00));
+        System.out.println("Balance after Withdrawing: "+savingsAccount.withdrawMoney(12000));
     }
 }
