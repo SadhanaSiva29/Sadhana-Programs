@@ -9,8 +9,7 @@ public class SavingsAccount extends BankAccount{
     }
     public static void main(String[] args) {
         SavingsAccount savingsAccount=new SavingsAccount("AB123",500.00,2,500,10);
-        System.out.println(savingsAccount.depositMoney(5000.00));
-        System.out.println(savingsAccount.withdrawMoney(4000.00));
-
+        System.out.println("Deposit: "+savingsAccount.depositMoney(5000.00));
+        System.out.println("Withdraw: "+savingsAccount.withdrawMoney(4000.00));
     }
 }
