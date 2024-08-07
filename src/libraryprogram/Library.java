@@ -30,6 +30,7 @@ public class Library {
             if ((books[i].getTitle().equals(title)) && books[i].isBorrowed()) {
                 books[i].returnBook();
                 System.out.println("Book is successfully returned: "+books[i]);
+                break;
             }
         }
     }
