@@ -12,14 +12,14 @@ public class IllegalArgumentException extends Exception {
 
     public static void main(String[] args) {
         Scanner sc=new Scanner (System.in);
-        double num;
+        double number;
         try{
-            num= sc.nextDouble();
-            if(calculateSquareroot(num)) {
+            number= sc.nextDouble();
+            if(calculateSquareroot(number)) {
                 throw new IllegalArgumentException();
             }
             else{
-                System.out.println(Math.sqrt(num));
+                System.out.println(Math.sqrt(number));
             }
         }
         catch (IllegalArgumentException e){
