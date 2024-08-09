@@ -3,18 +3,11 @@ package exceptionHandling;
 import java.util.Scanner;
 
 public class IllegalArgumentException extends Exception {
-    public IllegalArgumentException(String str) {
-        super(str);
+    public IllegalArgumentException() {
+        super("The number entered is invalid.");
     }
-}
-class test2{
-    public static void calculateSquareroot(double number) throws IllegalArgumentException{
-        if(number<=0){
-            throw new IllegalArgumentException("Invalid number");
-        }
-        else{
-            System.out.println("Squareroot:"+Math.sqrt(number));
-        }
+    public static boolean calculateSquareroot(double number){
+        return number<=0;
     }
 
     public static void main(String[] args) {
@@ -22,10 +15,11 @@ class test2{
         double num;
         try{
             num= sc.nextDouble();
-            calculateSquareroot(num);
+            if(!calculateSquareroot(num));
+            throw new IllegalArgumentException();
         }
         catch (IllegalArgumentException e){
-            System.out.println("Age is not acceptable.\n"+e);
+            System.err.println(e);
         }
     }
 }
