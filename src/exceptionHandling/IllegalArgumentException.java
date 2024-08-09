@@ -15,8 +15,12 @@ public class IllegalArgumentException extends Exception {
         double num;
         try{
             num= sc.nextDouble();
-            if(!calculateSquareroot(num));
-            throw new IllegalArgumentException();
+            if(calculateSquareroot(num)) {
+                throw new IllegalArgumentException();
+            }
+            else{
+                System.out.println(Math.sqrt(num));
+            }
         }
         catch (IllegalArgumentException e){
             System.err.println(e);
