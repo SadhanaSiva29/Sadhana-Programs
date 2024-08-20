@@ -12,7 +12,7 @@ public class NumberToWords {
             System.out.print(one[(number / 100000) % 100] + " lakh ");
         if (number > 100000)
             number = number % 100000;
-        if (number / 1000 != 0 && (number / 1000) % 100 <= 19 && number % 1000 != 0)
+        if (number / 1000 != 0 && (number / 1000) % 100 <= 19 )
             System.out.print(one[(number / 1000) % 100] + " thousand ");
         if (number / 1000 != 0 && (number / 1000) % 100 > 19)
             System.out.print(tens[(number / 10000)] + " " + one[(number / 1000) % 10] + " thousand ");
