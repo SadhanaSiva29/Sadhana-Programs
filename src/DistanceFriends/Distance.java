@@ -47,5 +47,6 @@ public class Distance {
             int distance2 = distance.nameSwitch(end);
             if(distance1!=0 && distance2!=0)
                 System.out.println(distance.difference(distance1, distance2));
+        System.out.println(63254/1000);
     }
 }
