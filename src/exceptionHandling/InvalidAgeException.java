@@ -4,6 +4,7 @@ public class InvalidAgeException extends Exception {
     public InvalidAgeException() {
         super("Invalid");
     }
+
     public static boolean checkAge(int age) {
        return age > 0 && age < 120;
     }
