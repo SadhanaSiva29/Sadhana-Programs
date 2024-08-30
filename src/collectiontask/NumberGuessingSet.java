@@ -76,6 +76,6 @@ public class NumberGuessingSet {
         } else {
             commonElements.removeAll(setD);
         }
-        System.out.println("The number you are thinking of is "+commonElements);
+        System.out.println("The number you are thinking of :"+commonElements);
     }
 }
