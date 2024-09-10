@@ -11,7 +11,6 @@ public class DateRegex {
         Matcher matcher = pattern.matcher(text);
         return matcher.replaceAll(replaceRegex);
     }
-
     public static void main(String[] args) {
         System.out.println(replaceDates("The event is scheduled for 12/09/2024 and another one for 25/12/2024"));
     }
