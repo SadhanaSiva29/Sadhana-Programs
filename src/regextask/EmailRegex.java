@@ -16,6 +16,9 @@ public class EmailRegex {
         Scanner scanner = new Scanner(System.in);
         EmailRegex emailRegex = new EmailRegex();
         String email = scanner.next();
-        System.out.println(emailRegex.isValidEmail(email));
+        if(emailRegex.isValidEmail(email)){
+            System.out.println("Valid");
+        }
+        else System.out.println("Invalid");
     }
 }

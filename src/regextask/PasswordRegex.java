@@ -4,7 +4,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class PasswordRegex {
-    static boolean isValidPassword(String password) {
+     boolean isValidPassword(String password) {
         String regex = "((?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[@,#,&,*])).{12}";
         Pattern pattern = Pattern.compile(regex);
         Matcher matcher = pattern.matcher(password);
@@ -26,6 +26,10 @@ public class PasswordRegex {
     }
 
     public static void main(String[] args) {
-        System.out.println(isValidPassword("ABSaD@FE&*#N"));
+        PasswordRegex passwordRegex = new PasswordRegex();
+        if(passwordRegex.isValidPassword("ABSaD@FE&*#N")){
+            System.out.println("Valid");
+        }
+        else System.out.println("Invalid");
     }
 }
