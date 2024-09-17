@@ -12,7 +12,7 @@ public class DateRegex {
         return matcher.replaceAll(replaceRegex);
     }
     public static void main(String[] args) {
-         DateRegex dateRegex = new DateRegex();
+        DateRegex dateRegex = new DateRegex();
         System.out.println(dateRegex.replaceDates("The event is scheduled for 12/09/2024 and another one for 25/12/2024"));
     }
 }
