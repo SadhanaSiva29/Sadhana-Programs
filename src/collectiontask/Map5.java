@@ -13,7 +13,7 @@ public class Map5 {
         treeMap.put("Raju", 2);
         treeMap.put("Achu", 3);
         treeMap.put("Shru", 4);
-        System.out.println("First key: "+ Collections.max(treeMap.keySet()));
-        System.out.println("Last key: "+Collections.min(treeMap.keySet()));
+        System.out.println("Last key: "+ treeMap.lastKey());
+        System.out.println("First key: "+treeMap.firstKey());
     }
 }
