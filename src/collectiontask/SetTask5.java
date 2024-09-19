@@ -7,9 +7,13 @@ import java.util.Set;
 public class SetTask5 {
     public static void main(String[] args) {
         Set<Integer> setA = new HashSet<>();
-        setA.addAll(Arrays.asList(new Integer[]{8, 9, 10, 11, 12, 13, 14, 15}));
+        setA.add(1);
+        setA.add(2);
+        setA.add(4);
         Set<Integer> setB = new HashSet<>();
-        setB.addAll(Arrays.asList(new Integer[]{4, 5, 6, 7, 12, 13, 14, 15}));
+        setB.add(4);
+        setB.add(5);
+        setB.add(2);
         if(setA.equals(setB))
             System.out.println("Equal");
         else System.out.println("Not Equal");
