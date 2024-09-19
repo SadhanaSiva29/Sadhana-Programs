@@ -14,9 +14,6 @@ public class SetTask5 {
         setB.add(4);
         setB.add(5);
         setB.add(2);
-        if(setA.equals(setB))
-            System.out.println("Equal");
-        else System.out.println("Not Equal");
         setA.retainAll(setB);
         System.out.println(setA);
     }
