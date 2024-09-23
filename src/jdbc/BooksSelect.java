@@ -21,8 +21,7 @@ public class BooksSelect {
             while (resultSet.next()) {
                 String title = resultSet.getString("title");
                 String author1 = resultSet.getString("author");
-                System.out.println("title: "
-                        + title +"\nauthor:"+author1);
+                System.out.println("title: " + title +"\nauthor:"+author1);
             }
             connection.close();
         } catch (Exception e) {
