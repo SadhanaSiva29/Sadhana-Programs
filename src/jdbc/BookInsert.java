@@ -15,9 +15,9 @@ public class BookInsert {
             preparedStatement.setInt(1, 1004);
             preparedStatement.setString(2, "HP4");
             preparedStatement.setString(3, "JK Rowlings4");
-//            preparedStatement.setInt(1,1003);
-//            preparedStatement.setString(2,"HP1");
-//            preparedStatement.setString(3,"JK Rowlings1");
+            preparedStatement.setInt(1,1003);
+            preparedStatement.setString(2,"HP1");
+            preparedStatement.setString(3,"JK Rowlings1");
             System.out.println("Inserted successfully");
             preparedStatement.executeUpdate();
             //System.out.println("Connected to the database!");
