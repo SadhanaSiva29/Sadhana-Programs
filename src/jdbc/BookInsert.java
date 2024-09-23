@@ -20,7 +20,6 @@ public class BookInsert {
             preparedStatement.setString(3,"JK Rowlings1");
             System.out.println("Inserted successfully");
             preparedStatement.executeUpdate();
-            //System.out.println("Connected to the database!");
             connection.close();
         } catch (SQLException e) {
             System.out.println(e.getMessage());
