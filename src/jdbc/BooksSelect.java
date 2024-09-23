@@ -19,7 +19,6 @@ public class BooksSelect {
             preparedStatement.setString(1, author);
             ResultSet resultSet = preparedStatement.executeQuery();
             while (resultSet.next()) {
-                //int id = resultSet.getInt("id");
                 String title = resultSet.getString("title");
                 String author1 = resultSet.getString("author");
                 System.out.println("title: "
