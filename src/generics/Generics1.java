@@ -11,8 +11,11 @@ public class Generics1 {
         public static void main(String[] args) {
             Generics1 generics1 = new Generics1();
             Integer[] intArray = {1, 2, 3, 4, 5};
+            String[] stringArray = {"h","i"};
             System.out.println("Array intArray contains:");
             generics1.printArray(intArray);
+            System.out.println("Array stringArray contains:");
+            generics1.printArray(stringArray);
         }
     }
 
