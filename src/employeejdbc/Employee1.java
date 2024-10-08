@@ -24,7 +24,7 @@ public class Employee1 {
     @Override
     public String toString() {
         return "\nEmployee ID: "+ employeeID + "\nFirst name: "+firstName+"\nLast name: "+lastName+"\nDate of birth: "+dob+"\nEmail ID: "
-                +employeeID +"\nPhone No.: "+phoneNo + "\nAddress: "+ address;
+                +employeeID +"\nPhone No.: "+ phoneNo + "\nAddress: "+ address;
     }
 
     public static void main(String[] args) {
