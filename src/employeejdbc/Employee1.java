@@ -105,7 +105,8 @@ public class Employee1 {
     }
 
     public static void main(String[] args) {
-        Address address1 = new Address("No.3, Nehru road","Indhira nagar","Kanchipuram","Tamil Nadu","600 003");
+        Address address1 = new Address("No.3, Nehru road","Indhira nagar","Kanchipuram",
+                 "Tamil Nadu","600 003");
         Employee1 createEmployee = new Employee1(5000000.0,"Remote","full-time",
                 "29/9/2004","C23005","Frontend",
                 "Lead",address1,"9034568047","saranBanumathi@gmail.com",
