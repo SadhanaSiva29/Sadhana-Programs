@@ -9,7 +9,7 @@ public class CompareArrays {
             arrayList1.add(i);
         }
         ArrayList<Integer> arrayList2 = new ArrayList<>();
-        for (int i = 0; i < 11; i++) {
+        for (int i = 1; i < 11; i++) {
             arrayList2.add(i);
         }
         if (arrayList1.equals(arrayList2) == true) {
